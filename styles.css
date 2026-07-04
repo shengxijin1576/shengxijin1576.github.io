@@ -1,0 +1,181 @@
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --text: #202124;
+  --muted: #62676d;
+  --border: #d8dde3;
+  --link: #174f8a;
+  --link-hover: #0d3157;
+  --section-gap: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+}
+
+.page {
+  width: min(100% - 2rem, 820px);
+  margin: 0 auto;
+  padding: 3rem 0 2.5rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h2 {
+  margin-bottom: 0.55rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin-bottom: 0.55rem;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+}
+
+.section-heading span {
+  color: var(--text);
+  font-size: 1.06rem;
+}
+
+section {
+  padding-top: var(--section-gap);
+}
+
+.subtitle,
+.affiliation {
+  margin-bottom: 0.15rem;
+  color: var(--muted);
+}
+
+.subtitle {
+  font-size: 1.05rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem 0.8rem;
+  min-width: 13rem;
+  padding-top: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  white-space: nowrap;
+}
+
+.intro p {
+  font-size: 1.06rem;
+}
+
+.plain-list,
+.paper-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.plain-list li,
+.paper-list li {
+  margin-bottom: 0.55rem;
+}
+
+.paper-list li {
+  padding-left: 0.15rem;
+}
+
+.paper-title {
+  display: block;
+}
+
+.paper-meta,
+.muted {
+  color: var(--muted);
+}
+
+.paper-meta {
+  display: inline-block;
+  margin-right: 0.35rem;
+}
+
+address {
+  font-style: normal;
+}
+
+address p {
+  margin-bottom: 0.35rem;
+}
+
+.email {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+
+  .page {
+    width: min(100% - 1.25rem, 820px);
+    padding-top: 1.6rem;
+  }
+
+  .site-header {
+    display: block;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+    min-width: 0;
+    margin-top: 1rem;
+  }
+}
