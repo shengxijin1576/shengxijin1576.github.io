@@ -9,6 +9,12 @@
   --section-gap: 2rem;
 }
 
+@font-face {
+  font-family: "Homepage Numerals";
+  src: local("Times New Roman");
+  unicode-range: U+0030-0039;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -128,6 +134,12 @@ section {
 .plain-list li,
 .paper-list li {
   margin-bottom: 0.55rem;
+}
+
+#seminar {
+  font-family: "Homepage Numerals", Georgia, "Times New Roman", Times, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 
 .paper-list li {

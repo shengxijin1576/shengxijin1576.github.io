@@ -1,0 +1,185 @@
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --text: #202124;
+  --border: #cfd4da;
+  --link: #174f8a;
+  --link-hover: #0d3157;
+}
+
+@font-face {
+  font-family: "Homepage Numerals";
+  src: local("Times New Roman");
+  unicode-range: U+0030-0039;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.seminar-page {
+  width: min(100% - 2rem, 800px);
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 1.25rem;
+  font-family: "Homepage Numerals", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  font-family: "Homepage Numerals", Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  margin-bottom: 0.65rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+section {
+  margin-top: 1.8rem;
+}
+
+.seminar-overview {
+  margin-top: 0;
+}
+
+.seminar-overview p {
+  margin-bottom: 0.7rem;
+}
+
+.schedule-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+}
+
+.schedule-scroll:focus {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+table {
+  width: 100%;
+  min-width: 690px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.45rem 0.55rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.schedule-scroll td:first-child,
+.citation-label {
+  font-family: "Times New Roman", Times, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+.schedule-scroll td:last-child {
+  font-family: "Homepage Numerals", Georgia, "Times New Roman", Times, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+th {
+  font-weight: 700;
+}
+
+th:nth-child(1) {
+  width: 15%;
+}
+
+th:nth-child(2) {
+  width: 20%;
+}
+
+th:nth-child(3) {
+  width: 40%;
+}
+
+th:nth-child(4) {
+  width: 25%;
+}
+
+.bibliography {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  font-family: "Homepage Numerals", Georgia, "Times New Roman", Times, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+.citation-label {
+  text-align: right;
+}
+
+.katex {
+  font-size: 1.05em;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+
+  .seminar-page {
+    width: min(100% - 1.25rem, 800px);
+    padding-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
