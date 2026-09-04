@@ -26,8 +26,8 @@
       src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
       integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk"
       crossorigin="anonymous"
-      onload="renderMathInElement(document.body, { delimiters: [{ left: '\\(', right: '\\)', display: false }, { left: '\\[', right: '\\]', display: true }] });"
     ></script>
+    <script defer src="seminar-math.js"></script>
   </head>
   <body>
     <main class="seminar-page">
@@ -58,76 +58,139 @@
             </thead>
             <tbody>
               <tr>
-                <td>Sep 3.</td>
+                <td>Sep 10.</td>
                 <td>Shengxi Jin</td>
-                <td>Categorical preliminaries</td>
+                <td>
+                  Categorical preliminaries
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">DG categories, A_infty categories, module categories,
+                      localization and quotient.</p>
+                  </details>
+                </td>
                 <td>[Gan13], [Kel06]</td>
               </tr>
               <tr>
-                <td>Sep 10.</td>
+                <td>Sep 17.</td>
                 <td>Frank Zheng</td>
-                <td>Sheaf theory I</td>
+                <td>
+                  Sheaf theory I
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">Abstract forthcoming.</p>
+                  </details>
+                </td>
                 <td></td>
               </tr>
                <tr>
-                <td>Sep 17.</td>
-                <td>Frank Zheng</td>
-                <td>Sheaf theory II</td>
-                <td></td>
-              </tr>
-              <tr>
                 <td>Sep 24.</td>
-                <td>TBD</td>
-                <td>Constructible sheaves and microsupport</td>
+                <td>Frank Zheng</td>
+                <td>
+                  Sheaf theory II
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">Abstract forthcoming.</p>
+                  </details>
+                </td>
                 <td></td>
               </tr>
               <tr>
                 <td>Oct 1.</td>
                 <td>TBD</td>
-                <td>Microlocal Morse lemma</td>
-                <td></td>
+                <td>Constructible sheaves and microsupport
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">Subanalytic stratification, constructibility, microsupport, microlocal Morse lemma.</p>
+                  </details>
+                </td>
+                <td>[KS90] Chapter V, VIII; [GPS24] Section 2,4; [Cas25] Chapter 3, 4</td>
               </tr>
               <tr>
                 <td>Oct 8.</td>
                 <td>TBD</td>
-                <td>Computational examples related to Legendrian knots</td>
-                <td>[Cas25]</td>
+                <td>
+                  Microlocal sheaves I
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">
+                      Microstalk, \(\mu\mathrm{hom}\) functor, Kashiwara-Schapira stack, smooth Legendrian.</p>
+                  </details>
+                </td>
+                <td>[KS90] Chapter III, IV; [Gui23]; [Cas25]</td>
               </tr>
-               <tr>
+              <tr>
                 <td>Oct 15.</td>
                 <td>TBD</td>
-                <td>Microlocalization</td>
-                <td></td>
+                <td>Microlocal sheaves II
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">Contact invariance, the embedding trick, on Weinstein skeleton, the doubling
+                  trick, antimicrolocalization, \(A_2\)-arboreal singularity.</p>
+                  </details>
+                </td>
+                <td>[KS90] Chapter VII; [NS20] Section 8; [Gui23] Part10; [Cas25]</td>
               </tr>
                <tr>
                 <td>Oct 22.</td>
                 <td>TBD</td>
-                <td>Partially wrapped Fukaya categories I</td>
-                <td></td>
+                <td>Partially wrapped Fukaya categories I
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">Liouville manifolds and sectors,
+                  wrapped Floer theory with stop.</p>
+                  </details>
+                </td>
+                <td>[GPS1] Section 2, 3</td>
               </tr>
                <tr>
                 <td>Oct 29.</td>
                 <td>TBD</td>
-                <td>Partially wrapped Fukaya categories II</td>
-                <td></td>
+                <td>Partially wrapped Fukaya categories II
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">Wrapping exact sequence,
+                  stop removal theorem, generation by cocores and linking disks.</p>
+                  </details>
+                </td>
+                <td>[GPS2] Section 6,9 </td>
               </tr>
                <tr>
                 <td>Nov 5.</td>
                 <td>TBD</td>
-                <td>Ganatra-Pardon-Shende I</td>
-                <td>[GPS24]</td>
+                <td>Microlocal Morse Theory I
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">Microlocal Morse theater, Morse character,
+                  uniqueness of microlocal Morse theater, Partially wrapped Fukaya categories
+                  as realization of microlocal Morse theater, Nadler-Zaslow correspondence as
+                  corollary.</p>
+                  </details>
+                </td>
+                <td>[GPS3] Section 3, 5, 6.1</td>
               </tr>
               <tr>
                 <td>Nov 12.</td>
                 <td>TBD</td>
-                <td>Ganatra-Pardon-Shende II</td>
-                <td>[GPS24]</td>
+                <td>Microlocal Morse Theory II
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">The doubling tricks, partially wrapped Fukaya categories
+                  and microlocal sheaves.</p>
+                  </details>
+                </td>
+                <td>[GPS3] Section 7</td>
               </tr>
               <tr>
                 <td>Nov 19.</td>
                 <td>TBD</td>
-                <td>Ganatra-Pardon-Shende III</td>
-                <td>[GPS24]</td>
+                <td>
+                  Other possible topics
+                  <details class="abstract-toggle">
+                    <summary><span class="show-label">Show details</span><span class="hide-label">Hide details</span></summary>
+                    <p class="abstract-text">Abstract forthcoming.</p>
+                  </details>
+                </td>
+                <td></td>
               </tr>
             </tbody>
           </table>
@@ -146,7 +209,23 @@
           <div>
             S. Ganatra, <em>Symplectic cohomology and duality for the wrapped Fukaya category</em>, Preprint (2013). [<a href="https://arxiv.org/abs/1304.7312">arXiv:1304.7312</a>]
           </div>
-          <div class="citation-label">[GPS24]</div>
+           <div class="citation-label">[Gui23]</div>
+          <div>
+            S. Guillermou, <em>Sheaves and symplectic geometry of cotangent bundles</em>, Astérisque (2023). [<a href="https://arxiv.org/abs/1905.07341">arXiv:1905.07341</a>]
+          </div>
+          <div class="citation-label">[GPS1]</div>
+          <div>
+            S. Ganatra, J. Pardon, and V. Shende, <em>Covariantly functorial wrapped Floer theory on Liouville sectors</em>,
+            Publ. Math. Inst. Hautes Études Sci. (2020).
+            [<a href="https://arxiv.org/abs/1706.03152">arXiv:1706.03152</a>]
+          </div>
+           <div class="citation-label">[GPS2]</div>
+          <div>
+            S. Ganatra, J. Pardon, and V. Shende, <em>Sectorial descent for wrapped Fukaya categories</em>,
+            J. Amer. Math. Soc. (2024).
+            [<a href="https://arxiv.org/abs/1809.03427">arXiv:1809.03427</a>]
+          </div>
+          <div class="citation-label">[GPS3]</div>
           <div>
             S. Ganatra, J. Pardon, and V. Shende, <em>Microlocal Morse theory of wrapped Fukaya categories</em>, Ann. of Math. (2024).
             [<a href="https://arxiv.org/abs/1809.08807">arXiv:1809.08807</a>]
@@ -159,6 +238,10 @@
           <div>
             B. Keller, <em>On differential graded categories</em>, Proceedings of the International Congress of Mathematicians. Volume II, Eur. Math. Soc., Zürich, 2006.
              [<a href="https://arxiv.org/abs/math/0601185">arXiv:math/0601185</a>]
+          </div>
+          <div class="citation-label">[NS20]</div>
+          <div>
+            D. Nadler, and V. Shende, <em>Sheaf quantization in Weinstein symplectic manifolds</em>, Preprint (2020). [<a href="https://arxiv.org/abs/2007.10154">arXiv:2007.10154</a>]
           </div>
         </div>
       </section>
