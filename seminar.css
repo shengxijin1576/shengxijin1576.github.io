@@ -204,7 +204,7 @@ th:nth-child(4) {
   text-align: right;
 }
 
-.katex {
+mjx-container {
   font-size: 1.05em;
 }
 
